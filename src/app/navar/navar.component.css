@@ -1,0 +1,27 @@
+img{
+    width:53%;
+    margin-bottom:7px;
+    margin-top: 6px;
+}
+button{
+    margin-top: 10px;
+    font-size: 20px ;
+    padding: 5px;
+    background: #ea2331;
+    color: #ffff;
+    border:none;
+    font-family: gilroy, Helvetica, Arial, Verdana, sans-serif;
+}
+
+.d-flex{
+    background: rgba(255, 255, 255, 0.692);
+}
+.btn-group{
+    margin-bottom:16px;
+}
+.btn-group{
+    border-radius: none !important;
+}
+/*<p> {{this.currentUser.email}} </p>*/
+
+

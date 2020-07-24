@@ -1,0 +1,87 @@
+<Div class="container-xl container-lg container-md container-sm">
+    <div class="subimg">
+        <label > Subir imagenes </label>
+        <input id="file" type="file" change="onFileSelect($event)">
+        <button class="subir" type="button" click="onUpload()"> Subir Imagen</button>
+    </div>
+    <div class="subimg">
+        <h4> Selecionar imagen </h4>
+        <select name="select">
+            <option value="value1">Value 1</option> 
+            <option value="value2" selected>Value 2</option>
+            <option value="value3">Value 3</option>
+          </select>
+    </div>
+    <div>
+        <h2> Subir Datos </h2>
+        <p> Datos 1</p>
+        <input type="form" value="" >
+        <p> Datos 2</p>
+        <input type="form" value="">
+        <p> Datos 3</p>
+        <input type="form" value="">
+        <p> Datos 4</p>
+        <input type="form" value="">
+    </div>
+</Div>
+<div class="container">
+    <div class="row">
+    <!-- Primera fase -->
+        <div class="col">
+            <div class="card-body" style="text-align: center;" *ngFor=" let desa of list">
+                <div class="card border-info mb-2" style="max-width: 18rem;">
+                        
+                    <div class="card-body text-info">
+                        <div class="card border-secondary">
+                            <p>{{ desa.invitado.nombre }}</p>
+                        </div>
+                    </div>
+                    <div class="card-body text-info">
+                        <div class="card border-secondary">
+                            <p>{{ desa.retador.nombre }}</p>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+    <!-- Segunda Fase -->
+        <div class="col">
+            <div class="card-body" style="text-align: center;" >
+                <div class="card border-info mb-2" style="max-width: 18rem;">
+                        
+                    <div class="card-body text-info">
+                        <div class="card border-secondary">
+                            <p>ganador segunda face</p>
+                        </div>
+                    </div>
+                    <div class="card-body text-info">
+                        <div class="card border-secondary">
+                            <p>ganador segunda face</p>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+    <!-- Tercera Face -->
+        <div class="col">
+            <div class="card-body" style="text-align: center;" >
+                <div class="card border-info mb-2" style="max-width: 18rem;">
+                        
+                    <div class="card-body text-info">
+                        <div class="card border-secondary">
+                            <p>Semi Finalistas</p>
+                        </div>
+                    </div>
+                    <div class="card-body text-info">
+                        <div class="card border-secondary">
+                            <p>Semi Finalistas</p>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

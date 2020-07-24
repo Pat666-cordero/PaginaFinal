@@ -1,0 +1,29 @@
+
+<h1> Olimpiadas Continental </h1>
+<div >
+        <div class="container">
+            <div class="row">
+              <div class="col">
+              </div>
+              <div class="col-6">
+                <div class="login">
+                    <form  #LoginForm="ngForm" (ngSubmit)="onSubmit()" class="custom-form"  >
+
+                      <h2>Login</h2>
+                      <input type="email" name="email" placeholder="Email" [(ngModel)]="form.email" required="required" />
+                      <p [hidden]="!error"> {{ error}}</p>
+                      <input
+                        type="password" name="password" placeholder="Password" [(ngModel)]="form.password" required="required" />
+                        <p [hidden]="!error"> {{ error}}</p>
+                      <button type="submit" class="btn btn-primary" [disabled]="!LoginForm.valid" >
+                         Iniciar Seción </button>
+                    </form>     
+                  </div>
+                  <button class="go" type="submit" routerLink="/inicio" >
+                    <img src="https://icon-icons.com/icons2/729/PNG/32/google_icon-icons.com_62736.png" alt="">
+                        <a routerLink="/inicio" > Entrar Con Google</a></button> 
+              </div>
+            </div>
+            <div style="margin-bottom: 130px;"></div>
+</div>
+

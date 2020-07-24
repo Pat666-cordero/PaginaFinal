@@ -1,0 +1,23 @@
+.subimg{
+
+    font-family: gilroy-bold, Helvetica, Arial, Verdana, sans-serif;
+    margin: 15px
+}
+label{
+    display:block;
+    color: #000000;
+    
+}
+#file{
+    border-radius: none;
+    margin-bottom: 15px;
+    display: block;
+}
+button{
+    border-radius: none;
+    background: #750c0c;
+    color: #f5f0f0;
+    margin-bottom: 5px;
+    width: 100px ;
+    display: block;
+}

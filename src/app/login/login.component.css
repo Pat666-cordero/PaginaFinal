@@ -1,0 +1,78 @@
+h1{
+    text-align: center;
+    font-family: gilroy-bold, Helvetica, Arial, Verdana, sans-serif;
+    color: #000000;
+    font-weight: bold;
+}
+h2{
+    font-family: gilroy-bold, Helvetica, Arial, Verdana, sans-serif;
+    color: #000000;
+    font-weight: serif;
+}
+.custom-form {
+    min-width: 300px;
+    max-width: 60%;
+    margin: 0px auto;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 2rem 3rem;
+    margin: auto;
+    border-radius: 2.5rem;
+    color: black;
+    margin-top: 10px;
+    
+  }
+  .container{
+      text-align: center;
+      
+  }
+input{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    width: 260px;
+    height: 40px;
+    padding: 3px 15px;
+}
+.custom-form button {
+    font-size: 20px ;
+    width: 100%;
+    padding: 5px;
+    background:#ea2331;
+    border: none;
+    color: #ffff;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.go{
+    font-size: 15px ;
+    width: 42%;
+    padding: 8px;
+    background: #4285f4;
+    border: none;
+    margin-left: 30px;
+    margin-top: -30px;
+    border-radius: 10px;
+    
+}
+.go img{
+    background:#ffff
+}
+a{
+    font-family: Gilroy;
+    color: #000;
+}
+.go label{
+    padding-left: 15px;
+}
+p{
+    font-size:12px;
+    color:rgba(235, 12, 12, 0.863);
+    font-weight: bold;
+
+}
+/*
+<button class="go" type="submit" routerLink="/inicio" >
+                        <img src="https://icon-icons.com/icons2/729/PNG/32/google_icon-icons.com_62736.png" alt="">
+                            <a routerLink="/inicio" > Entrar Con Google</a></button> 
+*/
