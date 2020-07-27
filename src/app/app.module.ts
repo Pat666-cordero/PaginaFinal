@@ -15,6 +15,7 @@ import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import { JarwisService } from './Services/jarwis.service';
 import { TokenService } from './Services/token.service';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ActualizarImgComponent } from './actualizar-img/actualizar-img.component';
 
 //para las imagenes
@@ -40,7 +41,7 @@ import { ActualizarImgComponent } from './actualizar-img/actualizar-img.componen
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [JarwisService,TokenService
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]
 })

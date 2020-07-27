@@ -1,28 +1,29 @@
 <div class="container-xl container-lg container-md container-sm"> 
     <div class="row mt-5 mb-4">
 
-        <div class="col-8 ">
+        <div class="col-12 ">
             <div>
-            <p style="display:inline-block; margin-right: 10px;"> Diciplina</p> 
-            <div>
+            <p class="discip"style="display:inline-block; margin-right: 10px;"> Diciplina</p> 
+            <div class="grup1" >
                 <form [formGroup]="this.formSearch" (ngSubmit)="onSubmit()">
                     <select formControlName="disciplina"
-                        class="form-control" id="disciplina"  > 
+                        class="form-control" id="disciplina"  style="display:inline-block; width: 80%;"> 
                         <option [ngValue]="dis" *ngFor="let dis of disc"> {{dis.nombre}} </option>
                     </select>
-                    <button type="submit" style="margin-left:10px"> Cargar </button>
+
+                    <button class="carga" type="submit" style="margin-left:10px"> Cargar </button>
                 </form>
             </div>
-            <div>
+            <!--<div style="margin-top:2rem"  >
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn "> Fase 1 </button>
-                    <button type="button" class="btn "> Fase 2 </button>
-                    <button type="button" class="btn "> Fase 3 </button>
-                    <button type="button" class="btn "> Fase 4 </button>
-                    <button type="button" class="btn "> Fase 5 </button>
-                    <button type="button" class="btn "> Fase 6 </button>
-                  </div>
-            </div>
+                    <button type="submit" class="but" *ngFor="let des of list" > {{des.fase}}</button>
+                    <button type="submit" class="but" > Fase 2 </button>
+                    <button type="submit" class="but" > Fase 3 </button>
+                    <button type="submit" class="but" > Fase 4 </button>
+                    <button type="submit" class="but" > Fase 5 </button>
+                    <button type="submit" class="but" > Fase 6 </button>
+                </div>
+            </div>-->
             </div>
             <br>
             <div class="row row-cols-1 row-cols-md-2" >
@@ -32,14 +33,19 @@
                     <div class="card-body"style="text-align: center;">
                       <h5 class="card-title">Partidos</h5>
                     <div *ngFor="let des of list">
-                        <div class="card border-info mb-3" style="max-width: 22rem; ">
+                        <div class="card border-info mb-3" style="max-width: 31rem; ">
                             <div class="card-body text-info">
                                 <div class="row">
                                     <div class="col ">
-                                        <p> Admin-L01AM1-{{ des.invitado.nombre}} </p>
+                                        <img src="{{des.invitado.image}}" alt="" style="max-width: 3rem; min-width: 3rem;">
+                                        <p class="desc"> {{ des.invitado.nombre}} </p>
+                                        
                                     </div>
+                                    <div> <p class="grup2"> VS </p> <p class="desc"> {{ des.fecha}} </p></div>
                                     <div class="col">
-                                        <p> Admin-L01AM1-{{ des.retador.nombre }} </p>
+                                        <img src="{{des.retador.image}}" alt="" style="max-width: 3rem; min-width: 3rem;">
+                                        <p class="desc"> {{ des.retador.nombre }} </p>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -55,26 +61,28 @@
                     <div class="card-body" style="text-align: center;" >
                       <h5 class="card-title">Resultados</h5>
                     <div *ngFor="let des of list">
-                        <div class="card border-info mb-3" style="max-width: 22rem;">
+                        <div class="card border-info mb-3" style="max-width: 31rem;">
                             <div class="card-body text-info">
                                 <div class="row">
                                     <div class="col ">
-                                        <p> {{ des.invitado.nombre }}  </p>
+                                        <img src="{{des.invitado.image}}" alt="" style="max-width: 3rem; min-width: 3rem;">
+                                        <p class="desc"> {{ des.invitado.nombre }}  </p>
                                     </div>
                                     <div class="col">
-                                        <p> {{ des.retador.nombre }}  </p>
+                                        <img src="{{des.retador.image}}" alt="" style="max-width: 3rem; min-width: 3rem;">
+                                        <p class="desc"> {{ des.retador.nombre }}  </p>
                                     </div>
                                     
                                 </div>
                                 <div class="row">
                                     <div class="col ">
-                                        <p> {{ des.invitado_puntaje }}  </p> 
+                                        <p class="grup3" style="margin-left: 6rem;"> {{ des.invitado_puntaje }}  </p> 
                                     </div>
                                     <div class="col">
-                                        <p> - </p>
+                                        <p style="font-size: 30px;color: #000000; font-weight: bold;"> - </p>
                                     </div>
                                     <div class="col">
-                                        <p> {{ des.retador_puntaje }}  </p>
+                                        <p class="grup3" style="margin-right: 6rem !important;"> {{ des.retador_puntaje }}  </p>
                                     </div>
                                     
                                 </div>
@@ -87,44 +95,8 @@
                    
             </div>
                 
-            <div class="row row-cols-1 ">
-                <div class="card border-secondary">
-                    <table class="table">
-                        <thead class="thead-dark">
-                          <tr>
-                            <th scope="col">Partido</th>
-                            <th scope="col">Equipo 1</th>
-                            <th scope="col">Equipo 2</th>
-                            <th scope="col">Ganador</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr *ngFor="let des of list">
-                            <th scope="row">1</th>
-                            <td>{{ des.invitado.nombre}} </td>
-                            <td>{{ des.retador.nombre }} </td>
-                            <td>@mdo</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      
-                      
-                </div>
-            </div>
         </div>
 
+    </div>
 
-        <div class="col-4">
-            <div>
-                <div class="card border-dark mb-3" style="max-width: 18rem;">
-                    <div class="card-header">  Fecha </div>
-                    <div class="card-body text-dark">
-                        
-                  </div>
-            </div>
-
-        </div>
-
-
-      </div>
 </div>
