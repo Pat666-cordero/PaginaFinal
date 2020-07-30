@@ -9,7 +9,8 @@ export class TokenService {
   private iss = {
     login : 'https://vast-dusk-77875.herokuapp.com/api/auth/login'
   }
-  //http://127.0.0.1:8000/api
+  //http://127.0.0.1:8000
+  //https://vast-dusk-77875.herokuapp.com/
   constructor() { }
 
   //esto

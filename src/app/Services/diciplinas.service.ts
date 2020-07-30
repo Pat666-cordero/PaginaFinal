@@ -8,7 +8,7 @@ export class DiciplinasService {
 
   api = "https://vast-dusk-77875.herokuapp.com/";
   //http://127.0.0.1:8000
-  //https://agile-cliffs-84377.herokuapp.com/
+  
 
   constructor( private http:HttpClient) { }
 

@@ -11,6 +11,7 @@ import { TokenService } from './token.service';
 export class AuthService {
   
   api = "https://vast-dusk-77875.herokuapp.com/";
+       //https://vast-dusk-77875.herokuapp.com/
 
   private loggedIn = new BehaviorSubject < boolean > (this.Token.loggedIn() );
   authStatus = this.loggedIn.asObservable();
@@ -45,9 +46,6 @@ export class AuthService {
     return formBody.join('&');
   }
 
-  index() {
-    return this.http.get(this.api + "api/auth/seccionperiodos", {});
-  }
 
   constructor(private  Token: TokenService, private http: HttpClient) { }
 }

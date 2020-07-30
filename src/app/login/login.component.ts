@@ -3,7 +3,7 @@ import { JarwisService } from '../Services/jarwis.service';
 import { TokenService } from '../Services/token.service';
 import { Router } from '@angular/router';
 import { AuthService } from '../Services/auth.service';
-//import { HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 //import { JarwisService } from '../../services/jarwis.service';
 
 @Component({
