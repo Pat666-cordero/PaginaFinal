@@ -1,14 +1,15 @@
 <div class="sticky-top d-flex flex-md-row  p-2 px-md-4 mb-1 ">
     <a class="mr-md-auto " routerLink="/inicio"><img src="https://i.postimg.cc/Jhp9W4sp/oie-transparent-2.png" alt="Logo del instituto-continental"></a>
     <nav class=" my-md-0 mr-5 md-3">
-        <button type="submit" routerLink="/login" *ngIf="!loggedIn"> Login </button>
-        <a class="fix" type="submit" routerLink="/fixture" *ngIf="loggedIn" > Fixture </a>
-        <div class="btn-group " role="group" *ngIf="loggedIn">
+        <button type="submit" class="login" routerLink="/login" *ngIf="!loggedIn"> Login </button>
+        <a class="fix" type="submit" *ngIf="loggedIn"  routerLink="/fixture"  > Fixture </a>
+       <div class="btn-group " role="group" *ngIf="loggedIn">
             <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" > Usuario </button>
             <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
               <a class="dropdown-item"  (click)="logout($event)" href="#">Cerrar Secion </a>
-              <a class="dropdown-item" href="#">Editar</a>
-              <a class="dropdown-item" routerLink="/editar"> Cambiar Imagenes </a>
+              <!--<a class="dropdown-item" href="#">Editar</a>
+              <a class="dropdown-item" routerLink="/editar"> Cambiar Imagenes </a>-->
+              
             </div>
           </div>
     </nav>

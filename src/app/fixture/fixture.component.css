@@ -1,8 +1,9 @@
 .discip{
     color: #000000;
     font-family: gilroy, Helvetica, Arial, Verdana, sans-serif;
-    font-size: 22px;
-    
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 45px;
     
 }
 .carga{
@@ -40,6 +41,28 @@ p{
     color: #000000;
 }
 .grup3{
+    font-family: gilroy, Helvetica, Arial, Verdana, sans-serif;
     font-size: 28px;
+    color: #ffffff;
+}
+.gnombre{
+    font-family: gilroy, Helvetica, Arial, Verdana, sans-serif;
+    color: #ffffff;
+}
+.card-title{
+    font-family: gilroy, Helvetica, Arial, Verdana, sans-serif;
+    font-weight: bold;
     color: #000000;
+}
+.border-danger{
+    background: none;
+}
+.Partidos-Puntaje{
+    background: #0066cc;
+}
+.bord{
+    border: 2px solid #000000 !important;
+}
+.bord1{
+    border: 1px solid #000000 !important;
 }

@@ -12,6 +12,7 @@ import { FixtureService } from'../Services/fixture.service';
 export class FixtureComponent implements OnInit {
 list: any=[];
 disc: any=[];
+
 formSearch;
   constructor( private disciplinas: DiciplinasService,
     private fixtureService: FixtureService,
@@ -35,6 +36,7 @@ formSearch;
     }, (err)=>{
 
     });
+
 
    }
 

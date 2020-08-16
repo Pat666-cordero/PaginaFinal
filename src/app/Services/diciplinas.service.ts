@@ -7,7 +7,7 @@ import { HttpClient,HttpHeaders } from '@angular/common/http';
 export class DiciplinasService {
 
   api = "https://vast-dusk-77875.herokuapp.com/";
-  //http://127.0.0.1:8000
+  //api = "http://127.0.0.1:8000"
   
 
   constructor( private http:HttpClient) { }

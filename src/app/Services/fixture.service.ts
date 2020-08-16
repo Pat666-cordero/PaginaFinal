@@ -31,8 +31,10 @@ export class FixtureService {
     
     return this.http.get(this.api + "api/auth/desafios", {});
   }
+ 
   indexByDisciplina(id : Number) {
     
     return this.http.get(this.api + "api/auth/desafios/indexByDisciplina/" + id, {});
   }
+
 }

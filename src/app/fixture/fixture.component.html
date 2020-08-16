@@ -3,12 +3,12 @@
 
         <div class="col-12 ">
             <div>
-            <p class="discip"style="display:inline-block; margin-right: 10px;"> Diciplina</p> 
+            <p class="discip"style=" margin-right: 10px;"> Diciplina</p> 
             <div class="grup1" >
                 <form [formGroup]="this.formSearch" (ngSubmit)="onSubmit()">
                     <select formControlName="disciplina"
-                        class="form-control" id="disciplina"  style="display:inline-block; width: 80%;"> 
-                        <option [ngValue]="dis" *ngFor="let dis of disc"> {{dis.nombre}} </option>
+                        class="form-control" id="disciplina"  style=" display: inline-block ;width: 50%;"> 
+                        <option [ngValue]="dis" *ngFor="let dis of disc"> {{ dis.nombre }} </option>
                     </select>
 
                     <button class="carga" type="submit" style="margin-left:10px"> Cargar </button>
@@ -28,20 +28,22 @@
             <br>
             <div class="row row-cols-1 row-cols-md-2" >
                 <div class="col mb-4">
-                  <div class="card border-secondary">
+                  <div class="card border-danger bord">
                    
                     <div class="card-body"style="text-align: center;">
-                      <h5 class="card-title">Partidos</h5>
+                      <h4 class="card-title">Partidos</h4>
                     <div *ngFor="let des of list">
-                        <div class="card border-info mb-3" style="max-width: 31rem; ">
-                            <div class="card-body text-info">
-                                <div class="row">
+                        <div class="card  mb-3 bord1" style="max-width: 31rem; ">
+                            <div class="card-body text-info ">
+                                <div class="row " style="padding: 5px; ">
                                     <div class="col ">
                                         <img src="{{des.invitado.image}}" alt="" style="max-width: 3rem; min-width: 3rem;">
                                         <p class="desc"> {{ des.invitado.nombre}} </p>
                                         
                                     </div>
-                                    <div> <p class="grup2"> VS </p> <p class="desc"> {{ des.fecha}} </p></div>
+                                    <div> <p class="grup2"> VS </p> <p class="desc"> {{ des.fecha}} </p>
+                                        <p> {{ des.estado}} </p>
+                                    </div>
                                     <div class="col">
                                         <img src="{{des.retador.image}}" alt="" style="max-width: 3rem; min-width: 3rem;">
                                         <p class="desc"> {{ des.retador.nombre }} </p>
@@ -56,30 +58,30 @@
                 </div>
 
                  <div class="col mb-4">
-                  <div class="card border-secondary">
+                  <div class="card bord">
                     
                     <div class="card-body" style="text-align: center;" >
-                      <h5 class="card-title">Resultados</h5>
+                      <h4 class="card-title">Resultados</h4>
                     <div *ngFor="let des of list">
-                        <div class="card border-info mb-3" style="max-width: 31rem;">
-                            <div class="card-body text-info">
-                                <div class="row">
-                                    <div class="col ">
-                                        <img src="{{des.invitado.image}}" alt="" style="max-width: 3rem; min-width: 3rem;">
-                                        <p class="desc"> {{ des.invitado.nombre }}  </p>
+                        <div class="card border-dark mb-3 bord1" style="max-width: 31rem;">
+                            <div class="card-body text-dark Partidos-Puntaje">
+                                <div class="row " type="button">
+                                    <div class="col "  >
+                                        <img src="{{des.invitado.image}}" alt="" style="max-width: 3rem; min-width: 3rem; ">
+                                        <p class="gnombre"> {{ des.invitado.nombre }}  </p>
                                     </div>
                                     <div class="col">
                                         <img src="{{des.retador.image}}" alt="" style="max-width: 3rem; min-width: 3rem;">
-                                        <p class="desc"> {{ des.retador.nombre }}  </p>
+                                        <p class="gnombre"> {{ des.retador.nombre }}  </p>
                                     </div>
                                     
                                 </div>
-                                <div class="row">
+                                <div class="row Partidos-Puntaje">
                                     <div class="col ">
                                         <p class="grup3" style="margin-left: 6rem;"> {{ des.invitado_puntaje }}  </p> 
                                     </div>
                                     <div class="col">
-                                        <p style="font-size: 30px;color: #000000; font-weight: bold;"> - </p>
+                                        <p style="font-size: 30px;color: #ffffff; font-weight: bold;"> - </p>
                                     </div>
                                     <div class="col">
                                         <p class="grup3" style="margin-right: 6rem !important;"> {{ des.retador_puntaje }}  </p>

@@ -1,4 +1,4 @@
-<div class="container-xl container-lg container-md container-sm">   
+<div class="container-xl container-lg container-md container-sm">  
   
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -20,112 +20,47 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-    </div>  
+    </div>
+  
     <br> 
     <div class=" row justify-content-center"> 
       <img src="https://i.postimg.cc/mDd9W56R/Sport-Continental.png" alt="" >
     </div>
-    <div class="tcarrera">
+<div class="tcarrera">
+      <div class="dbordes" >
         <H3 class="carrera" > Todas las Carreras Continental </H3>
+      </div>
+      
           <div class="row row-cols-1 row-cols-sm-3 ml-1 mr-1 "  >           
             <div class="col " *ngFor="let dis of list">
-              <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card border-success mb-3" style="max-width: 18rem; margin-top: 9px;" >
                 <div class="card-body ">
                   <p class="card-text"> {{ dis.nombre }} </p>
                 </div>
               </div>
             </div>
-          </div>
-
-        <!-- Carreras 
-          <div class="row row-cols-1 row-cols-sm-3 ml-1 mr-1 " >           
-              <div class="col">
-                <div class="card border-success mb-3" style="max-width: 18rem;">
-                  <div class="card-body ">
-                    <p class="card-text">Administracion de empresas </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card border-danger mb-3" style="max-width: 18rem;">
-                  <div class="card-body ">
-                    <p class="card-text">Administracion</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card border-warning mb-3" style="max-width: 18rem;">
-                  <div class="card-body ">
-                    <p class="card-text">Computación e Informatica</p>
-                  </div>
-                </div>
-              
-            </div>
-          </div>
-          <div class="row row-cols-1 row-cols-sm-3 ml-1 mr-1" >
-            <div class="col">
-              <div class="card border-primary mb-3" style="max-width: 18rem;">
-                <div class="card-body ">
-                  <p class="card-text">Diseño Grafico</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-info mb-3" style="max-width: 18rem;">
-                <div class="card-body ">
-                  <p class="card-text"> Contabilidad </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-dark mb-3" style="max-width: 18rem;">
-                <div class="card-body ">
-                  <p class="card-text"> Diseño de Modas</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row row-cols-1 row-cols-sm-3 ml-1 mr-1" >
-            <div class="col">
-              <div class="card border-danger mb-3" style="max-width: 18rem;">
-                <div class="card-body ">
-                  <p class="card-text">Gestión de la construcion</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-dark mb-3" style="max-width: 18rem;">
-                <div class="card-body ">
-                  <p class="card-text">Diseño de Interiores</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-info mb-3" style="max-width: 18rem;">
-                <div class="card-body ">
-                  <p class="card-text">Gastronomia y Arte Culinario</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        -->
-        
-    </div>
+          </div>  
+       
+</div>
 
     <div class="tdiscplina">
+      <div class="dbordes">
+
         <h3 id="ndisciplina"> Diciplinas</h3>
+
+      </div>
         <div>
             <div class="row row-cols-2 row-cols-sm-3" style="text-align: center; margin-top:20px; margin-bottom:20px" >
               <div class="col">
-                <i class="fas fa-futbol"></i>
+                <i class="fas fa-futbol fa-5x"></i>
               <p> Futbol </p>
               </div>
               <div class="col">
-                <img src="https://icon-icons.com/icons2/1603/PNG/96/sports-sport-fittness-volley-ball_108513.png" alt="">
+                <i class="fas fa-volleyball-ball fa-5x"></i>
               <p> Voley </p>
               </div>
               <div class="col">
-                <img  src="https://icon-icons.com/icons2/125/PNG/96/basketball_sport_ball_20185.png" alt="">
+                <i class="fas fa-basketball-ball fa-5x"></i>
               <p> Basquet </p>
               </div>
             </div> 
@@ -133,15 +68,15 @@
         <div>
           <div class="row row-cols-2 row-cols-sm-3" style="text-align: center;" >
             <div class="col">
-            <img src="https://icon-icons.com/icons2/37/PNG/96/soccersports_futbo_3658.png" alt="">
+              <i class="far fa-futbol fa-5x"></i>
             <p> Futsal </p>
             </div>
             <div class="col">
-              <img src="https://icon-icons.com/icons2/343/PNG/96/Table-tennis_35746.png" alt="">
+              <i class="fas fa-table-tennis fa-5x"></i>
             <p> Tenis de Mesa </p>
             </div>
             <div class="col">
-              <img src="https://icon-icons.com/icons2/1381/PNG/96/chess_94824.png" alt="">
+              <i class="fas fa-chess fa-5x"></i>
             <p> Ajedres </p>
             </div>
             </div>
@@ -150,40 +85,44 @@
         
     
     <div class="tfecha" >
+      <div class="dbordes">
+
       <h3 id="lfecha"> Lugar y Fecha de las Olimpiadas</h3>
+
+      </div>
       <div class="row row-cols-1 row-cols-sm-3">
         <div class="col" >
-          <div class="card border-dark" style=" margin: 50px">
+          <div class="card border-danger" style=" margin: 50px">
             <div class="card-body my-1">
-              <p>Copa America Continental </p>
+              <p> Copa America Continental </p>
             </div>
           </div>
-          <div class="card border-dark" style=" margin: 50px">
+          <div class="card border-danger" style=" margin: 50px">
             <div class="card-body">
               <p> Las Incriciones se realizaran en la oficina de bienestar estudiantil </p>
             </div>
           </div>
-          <div class="card border-dark " style=" margin: 50px">
+          <div class="card border-danger " style=" margin: 50px">
             <div class="card-body">
               <p> Ceremonia de Premiacio 18 de Junio </p>
             </div>
           </div>
         </div>
         <div class="col" style="margin-bottom:5px">
-          <img src="https://i.postimg.cc/66kbxxf0/115974623-2922022861241527-5122469829259529281-n.png" alt="">
+          <img src="https://i.postimg.cc/66kbxxf0/115974623-2922022861241527-5122469829259529281-n.png" alt="" style=" height:80%; margin-top: 30px;">
         </div>
         <div class="col">
-          <div class="card border-dark " style=" margin: 50px">
+          <div class="card border-primary" style=" margin: 50px">
             <div class="card-body">
               <p> El 27 de mayo y 31 de mayo</p>
             </div>
           </div>
-          <div class="card border-dark" style=" margin: 50px">
+          <div class="card border-primary" style=" margin: 50px">
             <div class="card-body">
               <p> En las instalaciones del colegio Saleciano</p>
             </div>
           </div>
-          <div class="card border-dark" style=" margin: 50px">
+          <div class="card border-primary" style=" margin: 50px">
             <div class="card-body">
               <p>¡Qué esperas! Organízate y participa. 🙌🏆
                 Tienes hasta el 20 mayo para inscribirte y demostrar tu talento e interiorizar nuestro</p>
@@ -192,7 +131,7 @@
         </div>
       </div>
     </div>
-
 </div>
+
 
 

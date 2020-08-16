@@ -12,6 +12,15 @@ img{
     border:none;
     font-family: gilroy, Helvetica, Arial, Verdana, sans-serif;
 }
+.login{
+    margin-top: 10px;
+    font-size: 20px ;
+    padding: 5px;
+    background: #ea2331;
+    color: #ffff;
+    border:none;
+    font-family: gilroy, Helvetica, Arial, Verdana, sans-serif; 
+}
 
 .d-flex{
     background: rgba(255, 255, 255, 0.692);
